@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
+input {
+  width: 300px;
+  /* box-sizing: border-box; */
+}
+
+.email-error,
+.country-error,
+.zip-code-error,
+.password-error,
+.password2-error
+{
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+  visibility: hidden;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(173, 1, 1);
+  color: white;
+  align-self: flex-start;
+}
+
+.active {
+  visibility: visible;
+}
+
+
+.validation:invalid,
+.validation:invalid:focus,
+.password-not-matching,
+.password-not-matching:focus {
+  border: 1px solid red;
+  outline-color: red;
+}
+
+.validation:valid,
+.password-matching,
+.password-matching:focus {
+  outline-color: green;
+  border: 1px solid green;
+}
+
+
+
