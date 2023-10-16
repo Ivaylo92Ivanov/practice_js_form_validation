@@ -19,11 +19,34 @@ body {
   justify-content: center;
 }
 
+form {
+  background-color: rgb(247, 245, 245);
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
 fieldset {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap:0.5rem;
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.3rem;
+  border-radius: 9px;
+  width: fit-content;
+  margin-top: 0.5rem;
+  align-self: flex-end;
+  transition: 500ms;
+  
+}
+
+button:hover {
+  background-color: white;
 }
 
 input {
